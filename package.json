@@ -1,0 +1,23 @@
+{
+  "name": "personal-api",
+  "version": "1.0.0",
+  "description": "<img src=\"https://devmounta.in/img/logowhiteblue.png\" width=\"250\" align=\"right\">",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "\u001bOD\u001bOD\u001bOD"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottTPete/redo-personalApi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScottTPete/redo-personalApi/issues"
+  },
+  "homepage": "https://github.com/ScottTPete/redo-personalApi#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
