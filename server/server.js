@@ -1,16 +1,20 @@
 var express = require('express'),
 	bodyParser = require('body-parser'),
+	cors = require('cors'),
 	middlewear = require('./controllers/middleware'),
 	mainCtrl = require('./controllers/mainCtrl'),
-	skillsCtrl = require('./controllers/skillsCtrl')
+	skillsCtrl = require('./controllers/skillsCtrl'),
 	app = express()
 
 //app.use() will apply a function to every request made.
 
 app.use(bodyParser.json());
+app.use(cors());
+app.use(express.static(__dirname + '../public'));
 
-app.use(middlewear.addHeaders);
+//app.use(middlewear.addHeaders);
 
+app.get('/personal/api/me', mainCtrl.getMe);
 app.get('/personal/api/name', mainCtrl.getName); //works
 app.get('/personal/api/location', mainCtrl.getLocation); //works
 app.get('/personal/api/occupations', mainCtrl.getOccupations); //works. occupations?order=asc is how queries are done.

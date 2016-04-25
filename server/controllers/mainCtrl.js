@@ -2,6 +2,10 @@ var me = require('../models/me');
 
 module.exports = {
 	
+	getMe: function(req, res, next) {
+		res.status(200).json(me)
+	},
+	
 	getName: function(req, res, next) {
 		res.status(200).json({name: me.name});
 		console.log('you got a name')
