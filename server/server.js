@@ -3,7 +3,6 @@ var express = require('express'),
 	cors = require('cors'),
 	middlewear = require('./controllers/middleware'),
 	mainCtrl = require('./controllers/mainCtrl'),
-	skillsCtrl = require('./controllers/skillsCtrl'),
 	app = express()
 
 //app.use() will apply a function to every request made.

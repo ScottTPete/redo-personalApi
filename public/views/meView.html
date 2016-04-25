@@ -2,8 +2,16 @@
 <ul ng-repeat="hobby in me.hobbies">
 	<li>{{hobby.name}} <br>type: {{hobby.type}}</li>
 </ul>
+<h3>Add Hobby:</h3>
+<input ng-model="hobby.name" placeholder="Hobby Name...">
+<input ng-model="hobby.type" placeholder="Hobby Type...">
+<button ng-click="addHobby(hobby)">Save Hobby</button>
+
 
 <h1>Occupations:</h1>
 <ul ng-repeat="job in me.occupations">
 	<li>{{job}}</li>
 </ul>
+<h3>Add Occuption:</h3>
+<input ng-model="job" placeholder="Occupation Title...">
+<button ng-click="addOccupation(job)">Save Job</button>

@@ -2,3 +2,7 @@
 <ul ng-repeat="skill in me.skills">
 	<li>{{skill.name}} <br>experience: {{skill.experience}}</li>
 </ul>
+<h3>Add A Skill:</h3>
+<input placeholder="Skill..." ng-model='skill.name'>
+<input placeholder="Experience..." ng-model='skill.experience'>
+<button ng-click="addSkill(skill)">Save Skill</button>
